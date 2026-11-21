@@ -53,5 +53,3 @@ if __name__ == "__main__":
 "New information is being sent"
 # Student Management System
 print("Welcome to Student Management System")
-print("Drag off")
-print("dosed in OD")
