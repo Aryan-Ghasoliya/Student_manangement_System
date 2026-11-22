@@ -54,3 +54,48 @@ if __name__ == "__main__":
 # Student Management System
 print("Welcome to Student Management System")
 print("wwwwwwwwwwwwwwwwwwwwwwww")
+
+
+students = []
+
+def add_student():
+    print("\n--- Add New Student ---")
+
+    student_id = input("Enter Student ID: ")
+    name = input("Enter Student Name: ")
+    age = int(input("Enter Student Age: "))
+    course = input("Enter Course: ")
+
+    student = {
+        "id": student_id,
+        "name": name,
+        "age": age,
+        "course": course
+    }
+
+    students.append(student)
+
+    print("\nStudent added successfully!")
+    print("Student Details:", student)
+
+
+def main():
+    while True:
+        print("\n--- Student Management System ---")
+        print("1. Add Student")
+        print("2. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            print("Exiting application...")
+            break
+        else:
+            print("Invalid choice!")
+
+
+if __name__ == "__main__":
+    main()
+    
