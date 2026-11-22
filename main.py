@@ -120,3 +120,6 @@ def view_students():
 
     print("--------------------------------")
     print(f"Total Students: {len(students)}")
+
+
+print("somewhere out of no where")
