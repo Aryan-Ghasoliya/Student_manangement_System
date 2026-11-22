@@ -98,4 +98,25 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
+
+print("Somwthing new is happing")
+print("whaowahowaho")
+
+
+def view_students():
+    print("\n========== STUDENT RECORDS ==========")
+
+    if not students:
+        print("No student records found.")
+        return
+
+    for student in students:
+        print("--------------------------------")
+        print(f"Student ID   : {student['id']}")
+        print(f"Student Name : {student['name']}")
+        print(f"Age          : {student['age']}")
+        print(f"Course       : {student['course']}")
+
+    print("--------------------------------")
+    print(f"Total Students: {len(students)}")
